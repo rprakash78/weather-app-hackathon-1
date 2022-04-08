@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>weather app</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .content {
+            width: 100vw;
+            height: 100vh;
+            font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+                "Lucida Sans", Arial, sans-serif;
+        }
+
+        .left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40vw;
+            height: 100vh;
+            background-color: whitesmoke;
+        }
+
+        .right {
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 60vw;
+            background-color: rgba(222, 219, 219, 0.895);
+        }
+
+        .card {
+            border-radius: 5%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            height: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .card h1 {
+            text-align: center;
+            font-size: 65px;
+        }
+
+        .card img {
+            width: 80%;
+            margin-top: 8%;
+        }
+
+        .card p {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .textdata {
+            text-align: left;
+            margin-left: 30px;
+        }
+
+        .textdata input {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 2px;
+            margin-right: 16px;
+            font-size: 17px;
+        }
+
+        .textdata button {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 2px;
+            font-size: 17px;
+        }
+
+        .column {
+            background-color: whitesmoke;
+            float: left;
+            margin-left: 50px;
+            margin-top: 30px;
+            width: 25%;
+            padding: 5px;
+            height: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .column img {
+            width: 85%;
+            height: 70%;
+        }
+
+        .textarea {
+            margin-left: 68%;
+            margin-top: 30px;
+            position: absolute;
+            bottom: 15px;
+            text-align: center;
+            color: green;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="left">
+            <div class="card">
+                <br /><br />
+                <h1>Chennai, IN</h1>
+                <p>Thunderstrom</p>
+                <img src="haze.svg" alt="thunderstrom" />
+                <h1>30&ordm;C</h1>
+                <p>Feels like 37&ordm;C</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="textdata">
+                <br /><br /><br />
+                <h2>
+                    07th April, Friday, 18:11
+                    <input type="text" placeholder="Search" value="Chennai" />
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </h2>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="humidity.png" alt="humidity">
+                        <br><br>
+                        <h3>Humidity</h3>
+                        <p>62%</p>
+                    </div>
+                    <div class="column">
+                        <img src="wind.png" alt="wind-speed">
+                        <br><br>
+                        <h3>Wind Speed</h3>
+                        <p>0.78 m/s</p>
+                    </div>
+                    <div class="column">
+                        <img src="compass.png" alt="compass">
+                        <br><br>
+                        <h3>Wind Direction</h3>
+                        <p>SE</p>
+                    </div>
+                    <div class="column">
+                        <img src="binocular.png" alt="compass">
+                        <h3>Visiblity</h3>
+                        <p>10 km</p>
+                    </div>
+                    <div class="column">
+                        <img src="sunrise.png" alt="compass">
+                        <h3>Sunrise</h3>
+                        <p>05:47</p>
+                    </div>
+                    <div class="column">
+                        <img src="sunset.png" alt="compass">
+                        <h3>Sunset</h3>
+                        <p>18:43</p>
+                    </div>
+                </div>
+            </div>
+            <div class="textarea">
+                <footer style="text-align: center;">Metric System: Imperial System</footer>    
+            </div>
+        </div>  
+    </div>
+</body>
+
+</html>
