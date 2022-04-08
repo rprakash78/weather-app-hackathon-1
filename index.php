@@ -1,0 +1,1 @@
+echo ‘<?php include_once(“watherapp.html”); ?>’ > index.php
